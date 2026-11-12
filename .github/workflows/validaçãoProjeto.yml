@@ -1,1 +1,16 @@
+name: Validação do Projeto
+on:
+  push:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Iniciando o Workflow"
+      - name: Checkout
+        uses: actions/checkout@v5
+      - name: Imprimindo repositório
+        run: echo "${{github.repository}}"
+      - name:
+        run: echo "${{github.actor}}"
+      
 
