@@ -12,5 +12,9 @@ jobs:
         run: echo "${{github.repository}}"
       - name:
         run: echo "${{github.actor}}"
+      - name: Verificando a existência do README.md
+        run: find "README.md"
+      - run: echo "Validação realizada"
+        
       
 
